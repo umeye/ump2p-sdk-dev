@@ -1,0 +1,66 @@
+libdevumspsdk_anykai.a：安凯芯片静态编译库。
+libdevumspsdk_anykai.so：安凯芯片动态编译库。
+libdevumspsdk_eabi_uclibc.a：NXP芯片静态编译库。
+libdevumspsdk_eabi_uclibc.so：NXP芯片动态编译库。
+libdevumspsdk_gm440.a：智源芯片静态编译库。
+libdevumspsdk_gm440.so：智源芯片动态编译库。
+libdevumspsdk_hisiv100.a：hisi v100版本的静态编译库。
+libdevumspsdk_hisiv100.so：hisi v100版本的动态编译库。
+libdevumspsdk_hisiv100_gcc343.a：HISIgcc3.4.3版本的静态编译库。
+libdevumspsdk_hisiv100_gcc343.so：HISIgcc3.4.3版本的动态编译库。
+libdevumspsdk_hisiv200.a：hisi v200版本的静态编译库。
+libdevumspsdk_hisiv200.so：hisi v200版本的动态编译库。
+libdevumspsdk_hisiv200_3531.a：hisi v200版本3531芯片的静态编译库。
+libdevumspsdk_hisiv200_3531.so：hisi v200版本3531芯片的动态编译库。
+libdevumspsdk_hisiv300.a：hisi v300版本的静态编译库。
+libdevumspsdk_hisiv300.so：hisi v300版本的动态编译库。
+libdevumspsdk_mipsel.a：雷凌芯片的静态编译库。
+libdevumspsdk_mipsel.so：雷凌芯片的动态编译库。
+libdevumspsdk_ti.a：TI芯片的静态编译库。
+libdevumspsdk_ti.so：TI芯片的动态编译库。
+libdevumspsdk_x86_32.a：32位x86的Linux的静态编译库。
+libdevumspsdk_x86_32.so：32位x86的Linux的动态编译库。
+libdevumspsdk_x86_64.a：64位x86的Linux的静态编译库。
+libdevumspsdk_x86_64.so：64位x86的Linux的动态编译库。
+libdevumspsdk_anba.so：安霸芯片动态编译库。
+libdevumspsdk_anba.a：安霸芯片静态编译库。
+libdevumspsdk_fsl.so：飞思卡尔芯片动态编译库。
+libdevumspsdk_fsl.a：飞思卡尔芯片静态编译库。
+libdevumspsdk_allen.so：高通Atheros芯片动态编译库。
+libdevumspsdk_goke_dynamic：国科芯片动态编译库。
+libdevumspsdk_goke_static：国科芯片静态编译库。
+libdevumspsdk_brcm_dynamic：博通芯片动态编译库。
+libdevumspsdk_brcm_static：博通芯片静态编译库。
+libdevumspsdk_linaro_dynamic：linaro芯片动态编译库。
+libdevumspsdk_linaro_static：linaro芯片静态编译库。
+libdevumspsdk_s2l_dynamic：安霸芯片S2L编译器版本动态编译的可执行程序
+libdevumspsdk_s2l_static：安霸芯片S2L编译器版本静态编译的可执行程序
+libdevumspsdk_histbv310.a：hisi tbv310版本的静态编译库。
+libdevumspsdk_histbv310.so：hisi tbv310版本的动态编译库。
+libdevumspsdk_hisiv500.a：hisi v500版本的静态编译库。
+libdevumspsdk_hisiv500.so：hisi v500版本的动态编译库。
+libdevumspsdk_fullhan.a：富瀚的静态编译库。
+libdevumspsdk_fullhan.so：富瀚的动态编译库。
+libdevumspsdk_MSTAR316.a:晨星半导体MSTAR316芯片的静态编译库
+libdevumspsdk_MSTAR316.so:晨星半导体MSTAR316芯片的动态编译库
+libdevumspsdk_MSTAR620Q.a:晨星半导体MSTAR620Q芯片的静态编译库
+libdevumspsdk_MSTAR620Q.so:晨星半导体MSTAR620Q芯片的动态编译库
+libdevumspsdk_qcom.a:高通qcom8939的静态编译库
+libdevumspsdk_qcom.so:高通qcom8939的动态编译库
+libdevumspsdk_mips_64bit.a:君正gcc472的64位静态编译库
+libdevumspsdk_mips_64bit.so:君正gcc472的64位动态编译库
+libdevumspsdk_mips_32bit.a:君正gcc472的32位静态编译库
+libdevumspsdk_mips_32bit.so:君正gcc472的32位动态编译库
+libdevumspsdk_ry3904n.a:瑞昱rts3904n静态编译库
+libdevumspsdk_ry3904n.so:瑞昱rts3904n动态编译库
+libdevumspsdk_anykaiv200.a:安凯V200静态编译库
+libdevumspsdk_anykaiv200.so:安凯V200动态编译库
+libdevumspsdk_himix100_dynamic: 海思himix100动态编译可执行程序。
+libdevumspsdk_himix100_static: 海思himix100静态编译可执行程序
+libdevumspsdk_himix200_dynamic: 海思himix200动态编译可执行程序。
+libdevumspsdk_himix200_static: 海思himix200静态编译可执行程序
+libdevumspsdk_aarch64_himix100_dynamic: 海思himix100（64位）动态编译可执行程序。
+libdevumspsdk_aarch64_himix100_static: 海思himix100（64位）静态编译可执行程序
+
+win32：WIN32的库文件。
+android：android的库文件。

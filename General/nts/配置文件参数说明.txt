@@ -1,0 +1,68 @@
+以下为配置文件主要参数说明，未说明部分为内部参数或暂停使用参数。
+
+[SYS]
+VendorId=1009
+VendorFlag=um
+DevModel=UM1000  //设备的内部型号，可以与UMDevModel相同
+UMDevModel=UM1000  //设备的型号，则设备厂商根据不同设备型号设置，该型号会显示在搜索工具上显示
+Version=
+
+CfgFileName=./npc_nts_client_config.ini  //配置参数路径（如果为#，则读取本文件），程序首先读取程序所在目录下的npc_nts_client_config.ini配置文件（文件名必须是npc_nts_client_config.ini），然后根据该文件中的该项参数，再读取对应文件的参数。
+ConnStateFileName= //状态设置文件路径及文件名，用于程序设置状态到该文件，设备的WEB可以读取该文件的参数来显示连接状态，该文件最好设置了内存文件分区中，如/var
+
+IfWriteLogFile=0
+LogFileName=./NpcNtsClientCon.log
+MaxLogFileSize=10
+
+IfStartLogNetSrv=0
+LogNetSrvPort=5000
+
+IfStartLogUpClient=0
+LogUpSrvIpaddr=192.168.1.160
+LogUpSrvPort=9510
+
+IfShowLogInfo=1 //是否显示日志信息，0：不显示，1：显示
+IfShowAlarmInfo=1 //是否显示报警信息，0：不显示，1：显示
+Dvps=0 //是否密码按MD5加密，0：不加密，1：要加密
+
+[NET]
+MonServerAddr=yun.umeye.cn  //平台域名
+MonServerUdpPort=8300 //平台端口号
+MnUdpPort=28450 //搜索设备UDP监听端口号
+WorkSrvAddr= //服务器缓存地址，当第一次连接后，程序会缓存连接的地址，下次则使用该地址连接，程序会定期更新这个地址，如果MonServerAddr参数被修改了，需要将该参数清空
+
+DevIpaddr=127.0.0.1  //设备的IP地址，即通过该IP地址连接设备，一般为127.0.0.1，所以需要设备的该地址可用
+DevPort=5800  //设备的媒体端口号
+DevPortExt1=0
+DevPortExt2=0
+DevUserName=admin
+DevPwd=
+ChNum=1 //设备的通道数，需要正确设置
+
+DestAddrNum=0 //目标地址数
+
+DestIpaddr[0]= //目标连接IP地址，0索引号对应通道1，1索引号对应通道2，如此类推，而0通道指DevIpaddr指向的地址
+DestPort[0]= //目标连接端口号
+
+DestIpaddr[1]=
+DestPort[1]=
+
+EmpowerMode=1
+EmpowerCode=
+
+DevIdType=0
+IfSetDevId=1
+IfSetPwd=0
+IfAllowSetIpaddr=1
+IfEnableDhcp=0
+DevMac=
+
+DevName= //设备名称，在搜索设备时显示在搜索设备列表中的名称
+DevId= //UMID，通过工具配置时，程序会写入这个配置参数，也可以手动填写
+AuthPwd= 
+
+HeartSpaceTime=30
+ReconnSpaceTime=2
+WaitConnectTimeout=8
+WaitRespMsgTimeout=8
+

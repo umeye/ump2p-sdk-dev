@@ -1,0 +1,12 @@
+1）功能介绍：
+该DEMO采用录像文件模拟摄像机，每个文件为一个摄像机，在FileCamera这个目录下可以有多个文件，文件配置方法参见相关说明。该模拟程序只有一路码流，客户端请求的主、子码流，都是同一路。
+
+2）测试方法：
+在bin目录下，运行NpcPtUmspServer.exe程序，该模拟摄像机的媒体端口号为5800，登录的用户名为admin，密码为空，运行后，再运行ntsclientcon.exe程序，需要将npc_nts_client_config.ini配置文件中的MonServerAddr参数设置为服务器的域名或IP地址，DevIpaddr参数设置为127.0.0.1，DevPort参数设置为5800，DevId参数设置为分配的UMID（需要我们分配测试使用的UMID）。
+运行好后即可使用客户端测试。
+可以通过PC客户端添加直连5800的方式来测试，即不启动ntsclientcon.exe程序，也可以测试，添加时需要输入NpcPtUmspServer.exe程序所在主机的IP地址及端口号5800。
+
+3）FileCamera配置方法：
+在目录FileCamera为模拟摄像机的视频文件，文件内容为裸流H264数据，每一个文件为一个通道，视频文件名格式为Chx.dat，x为索引号，从0开始，如Ch0.data为第一个通道的视频文件；音频文件名格式为ChAudiox.pcm，x为索引号，如ChAudio0.pcm为第一个通道的音频文件，音频文件的格式为8000采样率、单通道的G711A的音频文件。dev_config.ini为配置文件，ChNum参数为通道数，Ch[x].FrameRate为通道的视频帧率，x为索引号，0表示第一个通道，Ch[x].IfSupportAudio为是否支持音频，1表示支持，0表示不支持，如果支持音频，则需要有音频文件。
+
+
